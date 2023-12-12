@@ -1,0 +1,72 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width",initial-scale="1.0"/>
+        <link rel="stylesheet" href="main.css">
+        <title>Welcome</title>
+    </head>
+    <body>
+        <header>
+            <div id="brand">
+                <img src="logo1.jpg" class="img1">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Medicines">Medicines</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+                <ul class="mobile-menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Medicines">Service</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                    
+
+                </ul>
+            </div>
+        </header>
+        
+        <center>
+        <div class="user" id="userElement">
+            
+                
+        </div>
+        
+        </center>
+        <center><h2 class="appid" id="appElement"><bold>Travelz</bold></h2></center>
+        <center>
+        <div class="losig">
+            
+           <h2 id="login"><a href="login.html"><bold>Login</bold></a></h2><br>
+           <h2 id="signup"><a href="signup.html">Sign Up</a></h2>
+        </div>
+        </center>
+        <script>
+        function toggleMenu(menu) {
+            menu.classList.toggle('open');
+            var userElement = document.getElementById('userElement');
+            var appElement = document.getElementById('appElement');
+        
+            if (menu.classList.contains('open')) {
+                userElement.style.marginLeft = '0';
+                appElement.style.marginLeft = '-230px';
+                
+            } else {
+                userElement.style.marginLeft = '130px';
+                appElement.style.marginLeft = '20px';
+                
+            }
+        }
+    </script>
+    </body>
+</html>
